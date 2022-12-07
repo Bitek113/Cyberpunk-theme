@@ -1,0 +1,93 @@
+
+
+
+.edgerunners-bg {
+    background-image: url("img/edgerunners-bg.jpg");
+    height: 100vh;
+    width: 100%;
+    
+    /* background-repeat: no-repeat;
+    background-position: end center; */
+    background-attachment: fixed;
+    object-fit: cover;
+
+}
+
+.edgerunners-gif {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+}
+
+
+.h2_main-text { 
+    display: flex; 
+    flex-direction: row;
+    margin: 0 auto;
+    width: 74%;
+    padding: 30px 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 4rem;
+    } 
+
+.h2_main-text:before, .h2_main-text:after { 
+    content: "";
+     flex: 1 1;
+      border-bottom: 1px solid #000000;
+       margin: auto; 
+    } 
+
+.h2_main-text:before { margin-right: 10px; } 
+.h2_main-text:after { margin-left: 10px; } 
+
+
+
+/* .thread-line{ 
+    display: flex; 
+    flex-direction:column;
+    margin: 0 auto;
+    width: 94%;
+    height: 94%;
+    padding: 30px 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 4rem;
+    } 
+
+    .thread-line:before, .thread-line:after { 
+    content: "";
+     flex: 1 2;
+      border-bottom: 1px solid #000000;
+       margin: auto; 
+    } 
+
+    .thread-line:before { margin-top: 10px; } 
+    .thread-line:after { margin-bottom: 10px; }  */
+
+    .thread-line {
+        border-left: 3px solid black;
+        /* height: 40vh; */
+    }
+
+    .thread-line:before, .thread-line:after { 
+        content: "";
+         
+         height: 25px;
+         width: 25px;
+         background-color: rgb(0, 0, 0);
+         border-radius: 100%;
+         display: inline-block;  
+           position: absolute;
+           left: 0;
+        } 
+        
+        .thread-line:before {
+             margin-left: -13.8px; 
+            } 
+    
+        .thread-line:after {
+            bottom: 0;
+            margin-left: -13.8px;
+             }  

@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('fonts/Cyberpunk.ttf');     
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: #fcee09; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+::-webkit-scrollbar-track {
+    background: #111110; 
+}
+body {
+    margin: 0;
+    padding: 0;
+
+}
+#nav-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+.navbar-brand img {
+    height: 85px;
+    width: 100%;
+}
+
+.navbar ul li  {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-right: 20px;
+
+}
+
+.navbar li {
+    margin-right: 10px;
+
+}
+
+.nav-link {
+    color: red;
+    font-family: 'Cyberpunk';
+}
+
+.video {
+    min-height: 80vh;
+    width: 100%;
+} 
+video {
+    
+    object-fit: cover;
+    position: absolute;
+
+  }
+  
+.video-bg {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+   
+}
+#video {
+position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* h3 {
+    color: #fcee09;
+} */
+
+/* gallery */
+.gallery {
+    background-color: black;
+}
+
+.gallery-box img {
+    width: 350px;
+    height: auto;    
+}
+
+/* testimonial */
+
+
+.testimonial {
+    
+    height: 80vh;
+    /* width: 100%; */
+    position: relative;
+    z-index: 2;
+}
+.rogue-section {
+    z-index: 2;
+    position: relative;
+}
+
+
+.delamain-img  {
+    width: 900px;
+    display: block;
+    position: absolute;
+    bottom: -50;
+    right: 0;
+    z-index: -3;
+
+}
+
+/* .rogue-img {
+    height: 350px;
+    width:  600px; 
+     display: block;
+    position: absolute; 
+     bottom: -10;
+    left: 0; 
+     z-index: -1;
+    padding-bottom: 50px; 
+   
+} */
+.second {
+    background-color: #111110;
+}
+
+.text-yellow {
+    color: #FCEE09;
+}
+.bg-yellow {
+    background-color: #fcee09;
+}
+
+.cyber_background{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-image: url("img/bg.jpg");
+    filter: blur(6px);
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.cyber_content {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 98%;
+    padding: 20px;
+    /* text-align: center; */
+}
+
+.cyber_section_h1 {
+    font-weight: bold;
+}
+
+.h2_portfolio { 
+    display: flex; 
+    flex-direction: row;
+    margin: 0 auto;
+    width: 74%;
+    padding: 30px 0;
+    color: #fcee09;
+    font-weight: bold;
+    font-size: 4rem;
+    } 
+
+.h2_portfolio:before, .h2_portfolio:after { 
+    content: "";
+     flex: 1 1;
+      border-bottom: 1px solid #fcee09;
+       margin: auto; 
+    } 
+
+.h2_portfolio:before { margin-right: 10px; } 
+.h2_portfolio:after { margin-left: 10px; } 
+
+.cards-version-cyber {
+    border-radius: 0;
+    border: 4px solid #FCEE09;
+     /* background-color: linear-gradient(180deg, black) #FCEE09; */
+    background: rgb(0, 0, 0);
+    transition: background-color 3s;
+}
+
+.cards-version-cyber:hover, .cards-version-cyber:focus {
+/*     
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s; */
+    background: linear-gradient(180deg, #000000, transparent) #f8f804;
+   
+}
+
+/* @keyframes example {
+    from {background-color: black;}
+    to {background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 76%, rgba(252,238,9,1) 100%);}
+  } */
+
+@media (max-width: 1350px) {
+    .navbar ul li  {
+        font-size: 1em;
+     
+       
+    
+    }
+}
+@media (max-width: 1050px) {
+    .navbar ul li  {
+        font-size: 1em;
+        font-weight: bold;
+       
+    
+    }
+}
+
+i {
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* EDGERUNNERS-------------------------------------------------- */
+
+
