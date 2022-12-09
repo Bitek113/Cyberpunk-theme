@@ -1,0 +1,38 @@
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    column-gap: 15px;
+    height: 80vh;
+    /* background-image: url("img/lore-bg.jpg");
+    background-size: 80% ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    z-index: 5; */
+    position: relative;
+    
+}
+
+.img-lore-bg {
+    top: 50%;
+    right: 0%;
+    width: 700px;
+    height: 500px;
+    margin-top: -250px; /* Half the height */
+    margin-right: -250px; /* Half the width */
+    display: block;
+    position: absolute;
+    
+}
+
+.box-1 {
+    background-color: #FCEE0C;
+        
+}
+.box-2 {
+    background-color: #000000;
+}
+.box-3 {
+    background-color: #03D8F3;
+}
+
