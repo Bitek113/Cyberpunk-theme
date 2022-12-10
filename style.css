@@ -1,9 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @font-face {
     font-family: 'Cyberpunk';
     src: url('fonts/Cyberpunk.ttf');     
     font-weight: normal;
     font-style: normal;
-
 }
 
 ::-webkit-scrollbar {
@@ -28,11 +32,7 @@
 ::-webkit-scrollbar-track {
     background: #111110; 
 }
-body {
-    margin: 0;
-    padding: 0;
 
-}
 #nav-bar {
     position: absolute;
     top: 0;
@@ -40,6 +40,7 @@ body {
     left: 0;
     z-index: 5;
 }
+
 .navbar-brand img {
     height: 85px;
     width: 100%;
@@ -49,12 +50,10 @@ body {
     font-size: 1.5rem;
     letter-spacing: 1px;
     padding-right: 20px;
-
 }
 
 .navbar li {
     margin-right: 10px;
-
 }
 
 .nav-link {
@@ -67,26 +66,23 @@ body {
     width: 100%;
 } 
 video {
-    
     object-fit: cover;
     position: absolute;
-
   }
   
 .video-bg {
     height: 100vh;
     width: 100%;
-    position: relative;
-   
+    position: relative; 
 }
+
 #video {
-position: fixed;
+  position: fixed;
   right: 0;
   top: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -103,9 +99,6 @@ position: fixed;
     }
 }
 
-/* h3 {
-    color: #fcee09;
-} */
 
 /* gallery */
 .gallery {
@@ -117,50 +110,35 @@ position: fixed;
     height: auto;    
 }
 
+
 /* testimonial */
 
-
-.testimonial {
-    
+.testimonial {   
     height: 80vh;
-    /* width: 100%; */
     position: relative;
     z-index: 2;
+    display: block;
+    overflow: hidden;
 }
-.rogue-section {
-    z-index: 2;
-    position: relative;
-}
-
 
 .delamain-img  {
     width: 900px;
     display: block;
-    position: absolute;
+    position: absolute; 
     bottom: -50;
-    right: 0;
-    z-index: -3;
-
+    right: 0; 
+    z-index: -3;   
 }
 
-/* .rogue-img {
-    height: 350px;
-    width:  600px; 
-     display: block;
-    position: absolute; 
-     bottom: -10;
-    left: 0; 
-     z-index: -1;
-    padding-bottom: 50px; 
-   
-} */
-.second {
-    background-color: #111110;
+.rogue-section {
+    /* z-index: 2; */
+    /* position: relative; */
 }
 
 .text-yellow {
     color: #FCEE09;
 }
+
 .bg-yellow {
     background-color: #fcee09;
 }
@@ -208,7 +186,7 @@ position: fixed;
     color: #fcee09;
     font-weight: bold;
     font-size: 4rem;
-    } 
+} 
 
 .h2_portfolio:before, .h2_portfolio:after { 
     content: "";
@@ -250,14 +228,37 @@ position: fixed;
        
     
     }
+
+    .delamain-img  {
+        width: 700px;
+    }
+
+
 }
+@media (max-width: 1200px) {
+    .cyber_background{
+      
+        height: 120vh;
+      
+        
+    
+    }
+ 
+}
+
 @media (max-width: 1050px) {
     .navbar ul li  {
         font-size: 1em;
         font-weight: bold;
-       
     
     }
+    .testimonial {
+        height: auto;
+    }
+    .delamain-img  {
+        display: none; 
+    }
+
 }
 
 i {
