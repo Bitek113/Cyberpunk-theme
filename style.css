@@ -34,13 +34,12 @@ body {
     background: #111110;
 }
 
-#nav-bar {
+ #nav-bars {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 5;
-}
+} 
 
 .navbar-brand img {
     height: 85px;
@@ -205,28 +204,20 @@ video {
 
 .cards-version-cyber:hover,
 .cards-version-cyber:focus {
-
     background: linear-gradient(180deg, #000000, transparent) #f8f804;
-
 }
-
-
 
 @media (max-width: 1350px) {
     .navbar ul li {
         font-size: 1em;
-
     }
 
     .delamain-img {
         width: 700px;
     }
-
-
 }
 
 @media (max-width: 1200px) {
-
     .cyber_background {
         height: 120vh;
     }
@@ -235,14 +226,12 @@ video {
     .edgerunners-bg {
         background-position: center center;
     }
-
 }
 
 @media (max-width: 1050px) {
     .navbar ul li {
         font-size: 1em;
         font-weight: bold;
-
     }
 
     .testimonial {
@@ -252,7 +241,6 @@ video {
     .delamain-img {
         display: none;
     }
-
 }
 
 i {
@@ -260,8 +248,11 @@ i {
     color: white;
 }
 
-
 /* EDGERUNNERS-------------------------------------------------- */
+.edgerunners-nav {
+    background-color: #e71919;  
+}
+
 .edgerunners-bg {
     background-image: url("img/edgerunners-bg.jpg");
     height: 100vh;
@@ -269,6 +260,7 @@ i {
     background-repeat: no-repeat;
     background-position: end center;
     background-attachment: fixed;
+    top: 0;
 }
 
 .edgerunners-gif {
@@ -349,12 +341,6 @@ ul li {
     list-style: none;
 }
 
-@media screen and (max-width: 1200px) {
-    .edgerunners-bg {
-        background-position: center center;
-    }
-}
-
 /* COMICS------------------------------------------------------- */
 
 .comics {
@@ -382,18 +368,6 @@ ul li {
 /* GAME------------------------------------------------------- */
 :root {
     --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
-}
-
-.cyberpunk-main {
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(100% 11%, 100% 21%, 0 89%, 0 80%);
-    background-color: black;
-}
-
-.cyberpunk-wrapper {
-    background: rgb(3, 216, 243);
-    background: linear-gradient(349deg, rgba(3, 216, 243, 1) 01%, rgba(252, 238, 9, 1) 100%);
 }
 
 .v-content-wrapper {
