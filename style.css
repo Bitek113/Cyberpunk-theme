@@ -41,6 +41,10 @@ body {
     left: 0;
 } 
 
+.navbar a:hover{
+    color: white;
+}
+
 .navbar-brand img {
     height: 85px;
     width: 100%;
@@ -200,6 +204,7 @@ video {
     border: 4px solid #FCEE09;
     background: rgb(0, 0, 0);
     transition: background-color 3s;
+    max-width: 18rem;
 }
 
 .cards-version-cyber:hover,
@@ -221,6 +226,11 @@ video {
     .cyber_background {
         height: 120vh;
     }
+
+    .cards-version-cyber {
+        max-width: 24rem;
+    }
+    
 
     /* EDGERUNNERS-------------------------------------------------- */
     .edgerunners-bg {
@@ -256,10 +266,10 @@ i {
 .edgerunners-bg {
     background-image: url("img/edgerunners-bg.jpg");
     height: 100vh;
-    width: 100%;
     background-repeat: no-repeat;
     background-position: end center;
     background-attachment: fixed;
+    background-size: cover;
     top: 0;
 }
 
@@ -402,8 +412,18 @@ ul li {
     border-image-source: var(--gradient) !important;
     text-decoration: none;
     transition: all .4s ease;
-    padding: 12px 5px;
+    padding: 6px 6px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
+
+.btn-corpo-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 
 .btn-corpo-card:hover,
 .btn-corpo-card:focus {
